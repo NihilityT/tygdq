@@ -444,7 +444,7 @@
             this.lblCount.Name = "lblCount";
             this.lblCount.Size = new System.Drawing.Size(48, 19);
             this.lblCount.TabIndex = 1;
-            this.lblCount.Text = "字数";
+            this.lblCount.Text = "发送字数";
             this.lblCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lblCount, "文章字数");
             // 
@@ -767,7 +767,7 @@
             this.键数.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.键数.Width = 5;
             // 
-            // 字数
+            // 发送字数
             // 
             this.字数.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle11.BackColor = System.Drawing.Color.DimGray;
@@ -776,8 +776,8 @@
             dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Bisque;
             this.字数.DefaultCellStyle = dataGridViewCellStyle11;
             this.字数.FillWeight = 80F;
-            this.字数.HeaderText = "字数";
-            this.字数.Name = "字数";
+            this.字数.HeaderText = "发送字数";
+            this.字数.Name = "发送字数";
             this.字数.ReadOnly = true;
             this.字数.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.字数.Width = 5;

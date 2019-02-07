@@ -1259,7 +1259,7 @@
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(66, 16);
             this.checkBox9.TabIndex = 6;
-            this.checkBox9.Text = "字数[G]";
+            this.checkBox9.Text = "发送字数[G]";
             this.checkBox9.UseVisualStyleBackColor = true;
             this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 

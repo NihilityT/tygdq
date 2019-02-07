@@ -141,7 +141,7 @@ namespace WindowsFormsApplication2
             Pen B_Table = new Pen(Color.Gray);
             int ZiSH = Pic_Bmp.Height - 80;
             int ZiSX = 30;
-            g.DrawString("字数",text_Font,Brushes.DimGray,ZiSX + 10,ZiSH);
+            g.DrawString("发送字数",text_Font,Brushes.DimGray,ZiSX + 10,ZiSH);
             string zis = 字数格式化(Glob.TextLen);
             g.DrawString(zis,text_Font,Brushes.DimGray, 105 - g.MeasureString(zis,text_Font).Width - 3,ZiSH);
             g.DrawLine(B_Table, ZiSX + 5, ZiSH + 16, 100, ZiSH + 16);

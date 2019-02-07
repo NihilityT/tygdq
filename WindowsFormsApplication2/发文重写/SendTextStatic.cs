@@ -37,14 +37,14 @@ namespace WindowsFormsApplication2
             lblTextStyle.Text = 文章类型;
             lblSendCounted.Text = NewSendText.已发字数.ToString();//已发字数
             lblSendPCounted.Text = NewSendText.已发段数.ToString();
-            tbxSendC.Text = NewSendText.字数.ToString();
+            tbxSendC.Text = NewSendText.发送字数.ToString();
             lblTotalCount.Text = NewSendText.文章全文.Length.ToString();
             tbxNowStart.Text = NewSendText.标记.ToString();//当前标记
             tbxNowStartCount.Text = NewSendText.起始段号.ToString();
             this.cbxSingleTest.Checked = NewSendText.是否独练;
             if (NewSendText.是否周期)
             {
-                tbxSendTime.Text = NewSendText.周期.ToString();
+                tbxSendTime.Text = NewSendText.周期长度.ToString();
             }
             else {
                 tbxSendTime.Text = "-";
@@ -159,7 +159,7 @@ namespace WindowsFormsApplication2
             else
             {
                 int get = int.Parse(this.tbxNowStart.Text);
-                if (get + NewSendText.字数 <= NewSendText.文章全文.Length)
+                if (get + NewSendText.发送字数 <= NewSendText.文章全文.Length)
                 {
                     this.tbxNowStart.ReadOnly = true;
                     this.tbxNowStart.BackColor = Color.DarkGray;
@@ -190,7 +190,7 @@ namespace WindowsFormsApplication2
                     this.tbxSendC.ReadOnly = true;
                     this.tbxSendC.BackColor = Color.DarkGray;
                     (sender as Button).Text = "修";
-                    NewSendText.字数 = get;
+                    NewSendText.发送字数 = get;
                 }
                 else
                 {
@@ -219,7 +219,7 @@ namespace WindowsFormsApplication2
                         this.tbxSendTime.ReadOnly = true;
                         this.tbxSendTime.BackColor = Color.DarkGray;
                         (sender as Button).Text = "修";
-                        NewSendText.周期 = get;
+                        NewSendText.周期长度 = get;
                         NewSendText.周期计数 = get;
                     }
                     else
@@ -241,7 +241,7 @@ namespace WindowsFormsApplication2
             }
             else {
                 NewSendText.是否周期 = true;
-                tbxSendTime.Text = NewSendText.周期.ToString();
+                tbxSendTime.Text = NewSendText.周期长度.ToString();
                 lblNowTime.Text = NewSendText.周期计数.ToString();
                 btnCancelTime.Text = "停";
                 frm.SendTTest();
@@ -353,12 +353,12 @@ namespace WindowsFormsApplication2
                 string infoTextAdd = NewSendText.文章地址;
                 string infoTextTitle = NewSendText.标题;
                 string infoNowStart = NewSendText.标记.ToString();
-                string infoSendTextCount = NewSendText.字数.ToString();//发送字数
+                string infoSendTextCount = NewSendText.发送字数.ToString();//发送字数
                 string infoHaveSend = NewSendText.已发字数.ToString();
                 string infoNowDuan = this.tbxNowStartCount.Text;//当前段号
                 string infoIsInOrder = NewSendText.是否乱序.ToString();
                 string infoIsT = NewSendText.是否周期.ToString();
-                string infoTTime = NewSendText.周期.ToString();
+                string infoTTime = NewSendText.周期长度.ToString();
                 string infoisMyseft = NewSendText.是否独练.ToString();
                 _Ini setupini = new _Ini("Ttyping.ty");
                 string getALL_ = setupini.IniReadValue("发文面板配置","总序列","0");
@@ -398,7 +398,7 @@ namespace WindowsFormsApplication2
                 }
                 //配置集中
                 string info = infoNo + "|" + infoTextSources + "|" + infoTextAdd + "|" + infoTextTitle +
-                    "|" + infoNowStart + "|" + infoSendTextCount + "|" + infoHaveSend + "|" +
+                    "|" + (int.Parse(infoNowStart) - int.Parse(infoSendTextCount)) + "|" + infoSendTextCount + "|" + (int.Parse(infoHaveSend) - int.Parse(infoSendTextCount)) + "|" +
                     infoNowDuan + "|" + infoIsInOrder + "|" + infoIsT + "|" + infoTTime + "|" + infoisMyseft + "|" + DateTime.Now;
                 setupini.IniWriteValue("发文配置", infoNo.ToString(), info.ToString());
 

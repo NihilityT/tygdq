@@ -327,7 +327,7 @@ namespace WindowsFormsApplication2
         public void LoadSetup()
         {
             //创建表头
-            this.dataGridView1.Rows.Add("序", "时间", "段", "速度", "击键", "码长", "回改", "错字", "键数", "字数", "打词", "用时", "群");
+            this.dataGridView1.Rows.Add("序", "时间", "段", "速度", "击键", "码长", "回改", "错字", "键数", "发送字数", "打词", "用时", "群");
             this.dataGridView1.Rows[0].Frozen = true;
             this.dataGridView1.Rows[0].DefaultCellStyle.Font = new Font("微软雅黑", 11f);
             this.dataGridView1.Rows[0].DefaultCellStyle.BackColor = Theme.ThemeColorBG;
@@ -754,13 +754,13 @@ namespace WindowsFormsApplication2
                     {
                         int[] numlist;
                         //乱序的话
-                        if (TextLen < NewSendText.字数 && TextLen > 0)
+                        if (TextLen < NewSendText.发送字数 && TextLen > 0)
                         {
                             numlist = GetRandomUnrepeatArray(0, TextLen - 1, TextLen);
                         }
-                        else if (TextLen >= NewSendText.字数)
+                        else if (TextLen >= NewSendText.发送字数)
                         {
-                            numlist = GetRandomUnrepeatArray(0, TextLen - 1, NewSendText.字数);
+                            numlist = GetRandomUnrepeatArray(0, TextLen - 1, NewSendText.发送字数);
                         }
                         else
                         {
@@ -776,7 +776,7 @@ namespace WindowsFormsApplication2
                             if (NewSendText.乱序全段不重复)
                                 NewSendText.发文全文 = NewSendText.文章全文;
                             TextLen = NewSendText.发文全文.Length;
-                            numlist = GetRandomUnrepeatArray(0, TextLen - 1, NewSendText.字数);
+                            numlist = GetRandomUnrepeatArray(0, TextLen - 1, NewSendText.发送字数);
                         }
                         Random ro = new Random((int)DateTime.Now.Ticks);
                         foreach (int item in numlist)
@@ -813,8 +813,8 @@ namespace WindowsFormsApplication2
                     }
                     else
                     {
-                        int least = TextLen - NewSendText.标记 + 1 - NewSendText.字数;
-                        int limit = TextLen / NewSendText.字数;//总共只能发送多少段
+                        int least = TextLen - NewSendText.标记 + 1 - NewSendText.发送字数;
+                        int limit = TextLen / NewSendText.发送字数;//总共只能发送多少段
                         //MessageBox.Show(limit + "\n" + NewSendText.标记);
                         if (NewSendText.已发段数 < limit)
                         {
@@ -825,8 +825,8 @@ namespace WindowsFormsApplication2
                             }
                             else
                             {
-                                TextAll = NewSendText.发文全文.Substring(NewSendText.标记, NewSendText.字数);
-                                NewSendText.标记 += NewSendText.字数;
+                                TextAll = NewSendText.发文全文.Substring(NewSendText.标记, NewSendText.发送字数);
+                                NewSendText.标记 += NewSendText.发送字数;
                             }
                             this.textBoxEx1.Clear();
                             richTextBox1.SelectAll();
@@ -869,7 +869,7 @@ namespace WindowsFormsApplication2
                 else if (NewSendText.类型 == "词组")
                 {
                     Random ro = new Random((int)DateTime.Now.Ticks);
-                    for (int i = 0; i < NewSendText.字数; i++)
+                    for (int i = 0; i < NewSendText.发送字数; i++)
                     {
                         TextAll += NewSendText.词组[ro.Next(0, NewSendText.词组.Length - 1)] + NewSendText.词组发送分隔符;
                     }
@@ -907,10 +907,10 @@ namespace WindowsFormsApplication2
                     {
                         if (NewSendText.标记 < TextLen)
                         {  //标记必须小于长度
-                            int now = NewSendText.标记 + NewSendText.字数;
+                            int now = NewSendText.标记 + NewSendText.发送字数;
                             if (now < TextLen)
                             {
-                                int textlen = NewSendText.字数;
+                                int textlen = NewSendText.发送字数;
                                 if (zdSendText.isDot.IsMatch(NewSendText.文章全文.Substring(now - 1, 1))) //最后一个字不是汉字或数字
                                 {
                                     for (int i = now; i < now + 50; i++)
@@ -1010,7 +1010,7 @@ namespace WindowsFormsApplication2
 
                     string least = (NewSendText.类型 == "词组") ? "-共" + NewSendText.词组.Length + "词" : least_pre;
                     if (NewSendText.类型 == "单字" & NewSendText.是否乱序) { least = "-乱序循环"; }
-                    if (NewSendText.是否周期) { least += "-" + NewSendText.周期 + "秒"; }
+                    if (NewSendText.是否周期) { least += "-" + NewSendText.周期长度 + "秒"; }
                     //标题是否含有冒号
                     header = (header.Contains(":") || header.Contains("：")) ? header : header + ":";
                     string texttotal = header + "\r\n" + text + "\r\n" + pre + least + "-" + Glob.Instration.Trim();
@@ -1033,7 +1033,7 @@ namespace WindowsFormsApplication2
                     发文状态窗口.lblSendCounted.Text = NewSendText.已发字数.ToString();//已发字数
                     发文状态窗口.lblSendPCounted.Text = NewSendText.已发段数.ToString();//已发段数
                     发文状态窗口.tbxNowStart.Text = NewSendText.标记.ToString();//当前标记
-                    发文状态窗口.tbxSendC.Text = NewSendText.字数.ToString();//一次发送字数
+                    发文状态窗口.tbxSendC.Text = NewSendText.发送字数.ToString();//一次发送字数
                     发文状态窗口.tbxNowStartCount.Text = Glob.Pre_Cout;//当前段号
                     if (NewSendText.乱序全段不重复)
                         发文状态窗口.lblLeastCount.Text = NewSendText.发文全文.Length.ToString();
@@ -1108,11 +1108,11 @@ namespace WindowsFormsApplication2
         //周期发文
         public void SendTTest()
         {
-            NewSendText.周期计数 = NewSendText.周期;
+            NewSendText.周期计数 = NewSendText.周期长度;
             SendAOnce();
             //if (!NewSendText.是否独练)
             // {
-            //     sendtext("周期发文开始，发文周期：" +  NewSendText.周期 + "秒");
+            //     sendtext("周期发文开始，发文周期：" +  NewSendText.周期长度 + "秒");
             // }
             timerTSend.Start();
         }
@@ -1134,7 +1134,7 @@ namespace WindowsFormsApplication2
             if (NewSendText.周期计数 <= 0)
             {
                 SendAOnce();
-                NewSendText.周期计数 = NewSendText.周期;
+                NewSendText.周期计数 = NewSendText.周期长度;
             }
             if (!NewSendText.是否周期) timerTSend.Stop();
         }
@@ -1809,7 +1809,7 @@ namespace WindowsFormsApplication2
                                     case 'V': TotalSend += " 键准" + this.lbl键准.Text; break;
                                     case 'E': TotalSend += Cz; break;
                                     case 'F': TotalSend += FalutIns; break;
-                                    case 'G': TotalSend += " 字数" + TextLen; break;
+                                    case 'G': TotalSend += " 发送字数" + TextLen; break;
                                     case 'H':
                                         if (Glob.TextJs != 0)
                                         {

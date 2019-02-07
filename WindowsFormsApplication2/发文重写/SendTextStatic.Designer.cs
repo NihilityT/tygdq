@@ -365,7 +365,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 20);
             this.label10.TabIndex = 22;
-            this.label10.Text = "周期";
+            this.label10.Text = "周期长度";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tbxTitle
@@ -403,7 +403,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "文章来源";
+            this.label2.Text = "自定义文章";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3

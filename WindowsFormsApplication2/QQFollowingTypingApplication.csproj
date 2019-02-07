@@ -241,6 +241,9 @@
     <EmbeddedResource Include="FormTheme.resx">
       <DependentUpon>FormTheme.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewForm.resx">
+      <DependentUpon>NewForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SpeedCheckOut.resx">
       <DependentUpon>SpeedCheckOut.cs</DependentUpon>
     </EmbeddedResource>

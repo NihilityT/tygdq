@@ -27,7 +27,7 @@ namespace WindowsFormsApplication2
             this.CA_.AxisX.MajorGrid.LineColor = Color.LightGray;
             this.CA_.AxisY.MajorGrid.LineColor = Color.LightGray;
             this.chart1.Titles.Add(Ti);
-            this.dgvAllData.Rows.Add("序", "说明", "起点", "终点", "字数", "时间", "速度", "击键", "码长", "回改");
+            this.dgvAllData.Rows.Add("序", "说明", "起点", "终点", "发送字数", "时间", "速度", "击键", "码长", "回改");
             this.dgvAllData.Rows[0].Frozen = true;
             this.dgvAllData.Rows[0].DefaultCellStyle.BackColor = Color.FromArgb(7,131,162);
             this.dgvAllData.Rows[0].DefaultCellStyle.ForeColor = Color.White;
@@ -37,7 +37,7 @@ namespace WindowsFormsApplication2
         {
             if (Glob.SpeedPointCount > 0) {
                 this.Text = "第" + Glob.Pre_Cout + "段 测速信息 共" + Glob.SpeedPointCount + "个测速点";
-                Ti.Text = "第" + Glob.Pre_Cout + "段 字数" + Glob.TextLen + " 测速信息";
+                Ti.Text = "第" + Glob.Pre_Cout + "段 发送字数" + Glob.TextLen + " 测速信息";
                 double GetSpeed = 0,MinSpeed = 500,MaxSpeed = 0;
                 for (int i = 0; i < Glob.SpeedPointCount + 1; i++) {
                     if (i == 0)

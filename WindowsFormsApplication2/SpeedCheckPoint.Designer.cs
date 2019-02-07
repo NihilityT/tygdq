@@ -148,7 +148,7 @@
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "字数";
+            this.Column2.HeaderText = "发送字数";
             this.Column2.Name = "Column2";
             this.Column2.Width = 5;
             // 

@@ -531,7 +531,7 @@ namespace WindowsFormsApplication2
                 case 'D': return "回改[D]";
                 case 'E': return "错字[E]";
                 case 'F': return "错情[F]";
-                case 'G': return "字数[G]";
+                case 'G': return "发送字数[G]";
                 case 'H': return "键数[H]";
                 case 'I': return "用时[I]";
                 case 'J': return "重打[J]";
