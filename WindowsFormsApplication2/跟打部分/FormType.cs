@@ -17,14 +17,14 @@ using System.Reflection;
 using System.Drawing.Text;
 //秒表
 using IWshRuntimeLibrary;
-using WindowsFormsApplication2.检查更新;
-using WindowsFormsApplication2.编码提示;
+using TYGDQ.检查更新;
+using TYGDQ.编码提示;
 
 //发送桌面的快捷方式
 
 public delegate bool CallBack(int hwnd, int lParam);
 
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     public partial class Form1 : NewForm
     {
@@ -229,7 +229,7 @@ namespace WindowsFormsApplication2
                     this.BackColor = Theme.ThemeBG;
                     try
                     {
-                        this.BackgroundImage = Image.FromStream(Assembly.GetExecutingAssembly().GetManifestResourceStream("WindowsFormsApplication2.Resources.3.jpg"));
+                        this.BackgroundImage = Image.FromStream(Assembly.GetExecutingAssembly().GetManifestResourceStream("TYGDQ.Resources.3.jpg"));
                     }
                     catch
                     {
@@ -254,7 +254,7 @@ namespace WindowsFormsApplication2
                 this.BackColor = Theme.ThemeBG;
                 try
                 {
-                    this.BackgroundImage = Image.FromStream(Assembly.GetExecutingAssembly().GetManifestResourceStream("WindowsFormsApplication2.Resources.3.jpg"));
+                    this.BackgroundImage = Image.FromStream(Assembly.GetExecutingAssembly().GetManifestResourceStream("TYGDQ.Resources.3.jpg"));
                 }
                 catch
                 {
@@ -5796,7 +5796,7 @@ namespace WindowsFormsApplication2
         #region 跟打报告
         private void 跟打报告ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            WindowsFormsApplication2.跟打报告.TypeAnalysis tya = new 跟打报告.TypeAnalysis();
+            TYGDQ.跟打报告.TypeAnalysis tya = new 跟打报告.TypeAnalysis();
             tya.ShowDialog();
         }
         #endregion

@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2
+﻿namespace TYGDQ
 {
     partial class Form1
     {
@@ -85,7 +85,7 @@
             this.用时 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.群 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chartSpeed = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.richTextBox1 = new WindowsFormsApplication2.RichEditBoxLineRender();
+            this.richTextBox1 = new TYGDQ.RichEditBoxLineRender();
             this.contextMenuStripMain = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiFindSelectionBm = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
@@ -106,7 +106,7 @@
             this.后五百单字ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.岳阳楼记ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.为人民服务节选ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBoxEx1 = new WindowsFormsApplication2.TextBoxEx();
+            this.textBoxEx1 = new TYGDQ.TextBoxEx();
             this.lblNowTime_ = new System.Windows.Forms.Label();
             this.labelHaveTyping = new System.Windows.Forms.Label();
             this.toolStripStatusLabelStatus = new System.Windows.Forms.Label();
@@ -151,17 +151,17 @@
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton4 = new WindowsFormsApplication2.ToolButton();
-            this.tsb标注 = new WindowsFormsApplication2.ToolButton();
-            this.toolStripButton1 = new WindowsFormsApplication2.ToolButton();
-            this.toolStripButton3 = new WindowsFormsApplication2.ToolButton();
-            this.toolStripBtnLS = new WindowsFormsApplication2.ToolButton();
-            this.toolStripButton2 = new WindowsFormsApplication2.ToolButton();
-            this.tbnSpline = new WindowsFormsApplication2.ToolButton();
-            this.picBmTips = new WindowsFormsApplication2.ToolButton();
-            this.PicSend = new WindowsFormsApplication2.ToolButton();
-            this.toolButton1 = new WindowsFormsApplication2.ToolButton();
-            this.mS1 = new WindowsFormsApplication2.NewMenu();
+            this.toolStripButton4 = new TYGDQ.ToolButton();
+            this.tsb标注 = new TYGDQ.ToolButton();
+            this.toolStripButton1 = new TYGDQ.ToolButton();
+            this.toolStripButton3 = new TYGDQ.ToolButton();
+            this.toolStripBtnLS = new TYGDQ.ToolButton();
+            this.toolStripButton2 = new TYGDQ.ToolButton();
+            this.tbnSpline = new TYGDQ.ToolButton();
+            this.picBmTips = new TYGDQ.ToolButton();
+            this.PicSend = new TYGDQ.ToolButton();
+            this.toolButton1 = new TYGDQ.ToolButton();
+            this.mS1 = new TYGDQ.NewMenu();
             this.TSMI1 = new System.Windows.Forms.ToolStripMenuItem();
             this.设置ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.新发文ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -1467,7 +1467,7 @@
             // 
             this.picDoing.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.picDoing.BackColor = System.Drawing.Color.White;
-            this.picDoing.Image = global::WindowsFormsApplication2.Properties.Resources.doing;
+            this.picDoing.Image = global::TYGDQ.Properties.Resources.doing;
             this.picDoing.Location = new System.Drawing.Point(356, 73);
             this.picDoing.Name = "picDoing";
             this.picDoing.Size = new System.Drawing.Size(22, 22);

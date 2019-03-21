@@ -10,7 +10,7 @@ using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 using ListTrayBarInfo;
 using TyDll;
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     public class NewForm:FormBase
     {

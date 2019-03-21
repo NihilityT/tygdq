@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace WindowsFormsApplication2.编码提示
+namespace TYGDQ.编码提示
 {
     public class BmAll
     {

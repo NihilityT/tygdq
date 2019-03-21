@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.IO;
-namespace WindowsFormsApplication2.编码提示
+namespace TYGDQ.编码提示
 {
     public class FormBMTipsModel:IDisposable
     {

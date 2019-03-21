@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions; //正则
 
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     public partial class TSetup : Form
     {

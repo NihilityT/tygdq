@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Collections;
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     public partial class SendTextStatic : Form
     {

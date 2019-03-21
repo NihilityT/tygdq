@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2
+﻿namespace TYGDQ
 {
     partial class SpeedCheckOut
     {
@@ -33,9 +33,9 @@
             this.tbxP = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbxC = new System.Windows.Forms.TextBox();
-            this.btnOK = new WindowsFormsApplication2.NewButton();
-            this.btnCancel = new WindowsFormsApplication2.NewButton();
-            this.btnReget = new WindowsFormsApplication2.NewButton();
+            this.btnOK = new TYGDQ.NewButton();
+            this.btnCancel = new TYGDQ.NewButton();
+            this.btnReget = new TYGDQ.NewButton();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();

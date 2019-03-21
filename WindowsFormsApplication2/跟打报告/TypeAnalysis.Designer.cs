@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2.跟打报告
+﻿namespace TYGDQ.跟打报告
 {
     partial class TypeAnalysis
     {

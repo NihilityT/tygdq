@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2.检查更新
+﻿namespace TYGDQ.检查更新
 {
     partial class UpgradePro
     {

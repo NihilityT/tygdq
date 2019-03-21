@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     public class MagneticMagnager
     {

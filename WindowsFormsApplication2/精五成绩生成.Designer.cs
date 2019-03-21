@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2
+﻿namespace TYGDQ
 {
     partial class 精五成绩生成
     {

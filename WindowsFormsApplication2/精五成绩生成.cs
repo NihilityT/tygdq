@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     public partial class 精五成绩生成 : Form
     {

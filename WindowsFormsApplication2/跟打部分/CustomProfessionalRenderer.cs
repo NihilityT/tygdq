@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     public class CustomProfessionalRenderer:ToolStripProfessionalRenderer
     {

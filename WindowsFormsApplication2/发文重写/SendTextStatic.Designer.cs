@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2
+﻿namespace TYGDQ
 {
     partial class SendTextStatic
     {

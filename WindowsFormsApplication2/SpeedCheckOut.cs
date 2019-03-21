@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Runtime.InteropServices;
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     public partial class SpeedCheckOut : Form
     {

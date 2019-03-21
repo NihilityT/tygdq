@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2.编码提示
+﻿namespace TYGDQ.编码提示
 {
     public enum State
     {

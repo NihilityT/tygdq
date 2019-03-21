@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     internal static class ControlExtensions
     {

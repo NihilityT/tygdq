@@ -10,7 +10,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication2.检查更新
+namespace TYGDQ.检查更新
 {
     public partial class UpgradePro : Form
     {

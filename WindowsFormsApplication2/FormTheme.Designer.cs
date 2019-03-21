@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2
+﻿namespace TYGDQ
 {
     partial class FormTheme
     {
@@ -31,21 +31,21 @@
             this.components = new System.ComponentModel.Container();
             this.lblcls = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCancel = new WindowsFormsApplication2.NewButton();
-            this.newButton1 = new WindowsFormsApplication2.NewButton();
-            this.newButton2 = new WindowsFormsApplication2.NewButton();
-            this.newButton4 = new WindowsFormsApplication2.NewButton();
-            this.lblSelectFCColor = new WindowsFormsApplication2.NewButton();
+            this.btnCancel = new TYGDQ.NewButton();
+            this.newButton1 = new TYGDQ.NewButton();
+            this.newButton2 = new TYGDQ.NewButton();
+            this.newButton4 = new TYGDQ.NewButton();
+            this.lblSelectFCColor = new TYGDQ.NewButton();
             this.lblThemeFCShow = new System.Windows.Forms.Label();
-            this.SwitchB2 = new WindowsFormsApplication2.SwitchButton();
-            this.btnOk = new WindowsFormsApplication2.NewButton();
-            this.lblSelectBGColor = new WindowsFormsApplication2.NewButton();
+            this.SwitchB2 = new TYGDQ.SwitchButton();
+            this.btnOk = new TYGDQ.NewButton();
+            this.lblSelectBGColor = new TYGDQ.NewButton();
             this.lblThemeBGShow = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lblSelectBG = new WindowsFormsApplication2.NewButton();
+            this.lblSelectBG = new TYGDQ.NewButton();
             this.lblPicShow = new System.Windows.Forms.Label();
-            this.SwitchB1 = new WindowsFormsApplication2.SwitchButton();
-            this.lblSelectPIC = new WindowsFormsApplication2.NewButton();
+            this.SwitchB1 = new TYGDQ.SwitchButton();
+            this.lblSelectPIC = new TYGDQ.NewButton();
             this.lblBGPath = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -298,7 +298,7 @@
             this.SwitchB1.TabIndex = 3;
             this.SwitchB1.ValueA = "背景";
             this.SwitchB1.ValueB = "纯色";
-            this.SwitchB1.CChange += new WindowsFormsApplication2.SwitchButton.CheckedChange(this.SwitchB1_CChange);
+            this.SwitchB1.CChange += new TYGDQ.SwitchButton.CheckedChange(this.SwitchB1_CChange);
             this.SwitchB1.Click += new System.EventHandler(this.SwitchB1_Click);
             // 
             // lblSelectPIC

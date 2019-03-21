@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     public class ShowMessage
     {

@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2
+﻿namespace TYGDQ
 {
     partial class 捐助作者
     {
@@ -70,7 +70,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::WindowsFormsApplication2.Properties.Resources.pay2;
+            this.pictureBox1.Image = global::TYGDQ.Properties.Resources.pay2;
             this.pictureBox1.Location = new System.Drawing.Point(57, 109);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(233, 304);

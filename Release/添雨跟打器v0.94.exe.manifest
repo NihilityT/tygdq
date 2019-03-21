@@ -50,19 +50,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>iNE6l/ZG2IV+tyaUcDYEpRKsNVBhyhjRm8PjuEBZf44=</dsig:DigestValue>
+        <dsig:DigestValue>DXoNjFTYBrMq03oXB0auh506SaHbRIEu62ToUiy2jpk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="添雨跟打器v0.94.exe" size="468992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="添雨跟打器v0.94.exe" size="467968">
       <assemblyIdentity name="添雨跟打器v0.94" version="0.0.9.4" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SjXuZRC3xdpPixxut3kQbetx1XXCwXOF1b876FUpuLU=</dsig:DigestValue>
+        <dsig:DigestValue>YNMzo8xh34rE98ItI274ARB/G56BxYONVsR+RV92TNQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -5,7 +5,7 @@ using System.Text;
 using System.Drawing;
 using System.Collections.Specialized;
 
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     public class WordInfo
     {

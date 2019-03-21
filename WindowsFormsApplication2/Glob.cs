@@ -9,14 +9,14 @@ using System.Text.RegularExpressions; //正则
 using System.Collections;
 using System.Globalization;
 using System.Reflection;
-using WindowsFormsApplication2.编码提示;
+using TYGDQ.编码提示;
 
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     public class Glob
     { //一些全局变量
         private const string _ver = "0.94";
-        public static string Ver = ".18";
+        public static string Ver = ".19";
 
         public static string Form = "添雨跟打器v" + _ver;
         public static string Instration = " t46"; //尾发送字符

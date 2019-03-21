@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     public partial class FormTheme : Form
     {
@@ -283,7 +283,7 @@ namespace WindowsFormsApplication2
         private System.Drawing.Image GetImageFromResources(string name)
         {
             //System.Reflection.Assembly asm = System.Reflection.Assembly.GetEntryAssembly();
-            //System.IO.Stream imgStream = asm.GetManifestResourceStream("WindowsFormsApplication2.Resources.ButtonBG." + name);
+            //System.IO.Stream imgStream = asm.GetManifestResourceStream("TYGDQ.Resources.ButtonBG." + name);
             return TyDll.GetResources.GetImage("Resources.BG." + name);
         }*/
         /// <summary>

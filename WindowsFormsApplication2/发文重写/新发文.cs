@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 using System.Text.RegularExpressions; //正则
 using System.Collections;
 using TyDll;
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
 	public partial class 新发文 : Form
 	{
@@ -753,7 +753,7 @@ namespace WindowsFormsApplication2
 			switch (NewSendText.文章来源) {
 				case 0:
 					_assembly = Assembly.GetExecutingAssembly();
-					_textStreamReader = new StreamReader(_assembly.GetManifestResourceStream("WindowsFormsApplication2.Resources." + this.lbxTextList.Items[int.Parse(getAll[2])].ToString() + ".txt"));
+					_textStreamReader = new StreamReader(_assembly.GetManifestResourceStream("TYGDQ.Resources." + this.lbxTextList.Items[int.Parse(getAll[2])].ToString() + ".txt"));
 					if (_textStreamReader.Peek() != -1) {
 						GetText = _textStreamReader.ReadLine(); //文
 						ComText(GetText); //确认文章信息

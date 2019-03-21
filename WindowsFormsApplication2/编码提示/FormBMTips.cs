@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication2.编码提示
+namespace TYGDQ.编码提示
 {
     public partial class FormBMTips : Form
     {

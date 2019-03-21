@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ListTrayBarInfo;
 using System.Text.RegularExpressions;
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     static class Program
     {

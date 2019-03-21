@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2
+﻿namespace TYGDQ
 {
     partial class TSetup
     {
@@ -33,7 +33,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.newButton1 = new WindowsFormsApplication2.NewButton();
+            this.newButton1 = new TYGDQ.NewButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -135,7 +135,7 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.checkBox30 = new System.Windows.Forms.CheckBox();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.newButton2 = new WindowsFormsApplication2.NewButton();
+            this.newButton2 = new TYGDQ.NewButton();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();

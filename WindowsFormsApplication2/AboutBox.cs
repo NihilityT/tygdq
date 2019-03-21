@@ -6,7 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     partial class AboutBox : Form
     {

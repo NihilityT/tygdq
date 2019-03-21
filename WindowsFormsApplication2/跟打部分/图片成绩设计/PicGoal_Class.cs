@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Drawing;
 using System.Drawing.Text;
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     /*
      * 这是一个图片成绩的初始类

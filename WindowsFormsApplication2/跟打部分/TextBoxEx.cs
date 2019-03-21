@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     /**/
     /// <summary>

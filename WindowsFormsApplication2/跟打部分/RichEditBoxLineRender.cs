@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace WindowsFormsApplication2
+namespace TYGDQ
 {
     /// <summary>
     /// 跟据已经分好的分词信息，给RichEditBox 添加下划线显示。

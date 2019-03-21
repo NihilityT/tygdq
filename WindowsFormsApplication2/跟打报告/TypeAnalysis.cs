@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Reflection;
 
-namespace WindowsFormsApplication2.跟打报告
+namespace TYGDQ.跟打报告
 {
     public partial class TypeAnalysis : Form
     {
